@@ -7,20 +7,51 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-dark-blue flex flex-row justify-between items-center px-[10%] py-[0.5%]">
-        <div class="bg-dark-blue flex flex-row w-full items-end">
-            <img src="assets/images/pass-drive-logo.png" alt="pass & drive logo" width="200">
-            <div class="flex flex-row w-full px-[5%]">
-                <p class="mr-[5%] text-white text-lg font-semibold">HOME</p>
-                <p class="mr-[5%] text-white text-lg font-semibold"> ABOUT US</p>
-                <p class="mr-[5%] text-white text-lg font-semibold">LESSON INFO</p>
-                <p class="mr-[5%] text-white text-lg font-semibold">RESOURCES</p>
+    <header class="bg-dark-blue flex flex-row justify-between items-center px-10 py-[0.25%]">
+        <nav class="bg-dark-blue shadow-md fixed w-full top-0 left-0">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-center h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 text-2xl font-bold">
+                    <img src="assets/images/pass-drive-logo.png" alt="pass & drive logo" width="100">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">about u</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="absolute right-0 md:hidden mr-25">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                    <!-- Hamburger Icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    </button>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="flex flex-row w-full justify-end items-center">
-            <p class="mr-5  text-white text-lg font-semibold">Need lessons?</p>
-            <button type="button" class="bg-medium-blue text-white text-lg font-semibold p-[1%] rounded-lg">CONTACT</button>
-        </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="menu" class="hidden md:hidden bg-dark-blue">
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">ABOUT US</a>
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">LESSON INFO</a>
+                <a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">RESOURCES</a>
+            </div>
+        </nav>
+        <script>
+            const btn = document.getElementById("menu-btn");
+            const menu = document.getElementById("menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
         
     </header>
     <div>

@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-dark-blue flex flex-row justify-between items-center px-10 py-[0.25%] fixed top-0 h-16 z-50">
-        <nav class="bg-dark-blue shadow-md fixed w-full top-0 left-0">
+    <header class="bg-dark-blue flex flex-row justify-between items-center py-[10px] shadow-md">
+        <nav class="bg-dark-blue w-full top-0 left-0">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-center h-16 items-center">
                 <!-- Logo -->
@@ -28,20 +28,26 @@
                 <div class="absolute right-0 md:hidden mr-[25px]">
                     <button id="menu-btn" class="text-white focus:outline-none">
                     <!-- Hamburger Icon -->
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                    <img src="assets/images/hamb-menu.png">
                     </button>
                 </div>
                 </div>
             </div>
 
             <!-- Mobile Menu (hidden by default) -->
-            <div id="menu" class="hidden md:hidden bg-dark-blue">
-                <a href="#" class="block px-4 py-2 text-white text-[20px] ml-[40px] font-semibold hover:bg-gray-100">ABOUT US</a>
-                <a href="#" class="block px-4 py-2 text-white text-[20px] ml-[40px] font-semibold  hover:bg-gray-100">LESSON INFO</a>
-                <a href="#" class="block px-4 py-2 text-white text-[20px] ml-[40px] mb-[20px] font-semibold hover:bg-gray-100">RESOURCES</a>
+            <div id="menu" class="hidden md:hidden bg-dark-blue px-[40px]">
+                <a href="#" class="block text-white text-[20px] font-lato my-[25px] font-bold hover:bg-gray-100">ABOUT US</a>
+                <a href="#" class="block text-white text-[20px] font-lato mb-[25px] font-bold  hover:bg-gray-100">LESSON INFO</a>
+                <a href="#" class="block text-white text-[20px] font-lato mb-[25px] font-bold hover:bg-gray-100">RESOURCES</a>
+
+                <a href="#" class="flex flex-row text-white text-[14px] mb-[10px] font-lato font-bold hover:bg-gray-100">
+                    <img src="assets/images/phone-icon.png" alt="pass & drive logo" class="pr-[5px]">
+                    <p class="font-lato">+44 7911 123456</p>
+                </a>
+                <a href="#" class="flex flex-row text-white text-[14px] mb-[20px] font-lato font-bold hover:bg-gray-100">
+                    <img src="assets/images/email-icon.png" alt="pass & drive logo" class="pr-[5px]">
+                    <p class="font-lato">contact@passdrive.com</p>
+                </a>
             </div>
         </nav>
         <script>
@@ -55,34 +61,36 @@
         
     </header>
 
-    <div class="bg-[url(/assets/images/bannermobile1.png)] bg-cover bg-center bg-no-repeat mt-16 items-center justify-center text-center">
-        <div class="py-[150px] px-[20px]">
-            <h1 class="text-white text-[32px]">
+    <div class="bg-[url(/assets/images/bannermobile1.png)] bg-cover bg-center bg-no-repeat items-center justify-center text-center">
+        <div class="px-[20px] pt-[150px]">
+            <h1 class="text-white text-[32px] font-lato">
                 Get on the road with <span class="font-bold">safety</span> and <span class="font-bold">confidence</span>.
             </h1>
-            <button class="bg-dark-blue text-white font-semibold text-[28px] rounded-[15px] px-[27px] py-[18px] mt-[30px] shadow-2xl">Book a lesson</button>
+            <button class="bg-darker-blue text-white font-lato text-[24px] rounded-[25px] outline-2 mt-[30px] mb-[90px] shadow-2xl">
+                <p class="mx-[70px] my-[15px]">Book a lesson</p>
+            </button>
         </div> 
     </div>
     <div class="text-center py-[40px]">
-        <h1 class="text-dark-blue font-semibold text-[24px] mx-[50px]">Making your driving goals a reality.</h1>
+        <h1 class="text-dark-blue font-bold font-lato text-[24px] mx-[50px]">Making your driving goals a reality.</h1>
         <div class="mt-[20px]">
             <div class="flex flw-row justify-center">
-                <img src="assets/images/Checkboxes.png">
-                <p class="text-[20px] ml-[10px]">Friendly and Professional</p>
+                <img src="assets/images/Checkboxes.png" width="30">
+                <p class="text-[20px] ml-[10px] font-lato">Friendly and professional</p>
             </div>
             <div class="flex flw-row justify-center mt-[15px]">
-                <img src="assets/images/Checkboxes.png">
-                <p class="text-[20px] ml-[10px]">Nearly two decades of experience</p>
+                <img src="assets/images/Checkboxes.png" width="30">
+                <p class="text-[20px] ml-[10px] font-lato">Nearly two decades of experience</p>
             </div>
             <div class="flex flw-row justify-center mt-[15px]">
-                <img src="assets/images/Checkboxes.png">
-                <p class="text-[20px] ml-[10px]">Over 100 Students Passed</p>
+                <img src="assets/images/Checkboxes.png" width="30">
+                <p class="text-[20px] ml-[10px] font-lato">Over 100 Students Passed</p>
             </div>
         </div>
     </div>
     
     <footer class="bg-dark-blue py-[25px] px-[30px] text-center">
-        <p class="text-white text-[16px]">2025 Pass & Drive | All rights reserved | Websites & Marketing by Handler</p>
+        <p class="text-white text-[16px] font-lato">2025 Pass & Drive | All rights reserved | Websites & Marketing by Handler</p>
     </footer>
 </body>
 </html>

@@ -7,21 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="bg-dark-blue flex flex-row justify-between items-center shadow-md">
+    <!-- Mobile header -->
+    <header class="bg-dark-blue flex flex-row justify-between items-center shadow-md md:hidden">
         <nav class="bg-dark-blue w-full top-0 left-0">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-center h-16 items-center">
                 <!-- Logo -->
                 <div class="flex-shrink-0 text-2xl font-bold">
                     <img src="assets/images/pass-drive-logo.png" alt="pass & drive logo" width="120">
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6">
-                    <a href="#" class="text-gray-700 hover:text-blue-600">about u</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600">Services</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
                 </div>
 
                 <!-- Mobile Hamburger Button -->
@@ -34,7 +27,7 @@
                 </div>
             </div>
 
-            <!-- Mobile Menu (hidden by default) -->
+            <!-- Mobile Menu -->
             <div id="menu" 
                 class="hidden absolute top-16 left-0 w-full bg-dark-blue z-50 md:hidden px-[40px]">
                 <a href="#" class="block text-white text-[20px] font-lato my-[25px] font-bold hover:bg-gray-100">ABOUT US</a>
@@ -62,7 +55,38 @@
         
     </header>
 
-    <div class="bg-[url(/assets/images/bannermobile1.png)] bg-cover bg-center bg-no-repeat items-center justify-center text-center">
+    <header class="hidden md:block bg-dark-blue px-6 sm:px-12 xl:px-20 py-4">
+        <div class="flex flex-row justify-between items-center">
+            <!-- Logo + Menu -->
+            <div class="flex flex-row space-x-8">
+            <img src="assets/images/logo-desktop.png" class="w-[8vw] max-w-[160px] min-w-[100px]" alt="Pass & Drive Logo"/>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-4 lg:space-x-8 items-end">
+                <a href="#" class="font-lato font-semibold text-white text-sm lg:text-base hover:text-blue-600">HOME</a>
+                <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">ABOUT US</a>
+                <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">LESSON INFO</a>
+                <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">CONTACT</a>
+            </nav>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="flex flex-col space-y-2 text-white text-sm lg:text-base">
+            <div class="flex flex-row items-center">
+                <img src="assets/images/phone-icon.png" class="w-5 h-5 lg:w-6 lg:h-6" alt="Phone Icon">
+                <p class="font-lato ml-2">+44 7911 123456</p>
+            </div>
+            <div class="flex flex-row items-center">
+                <img src="assets/images/email-icon.png" class="w-5 h-5 lg:w-6 lg:h-6" alt="Email Icon">
+                <p class="font-lato ml-2">contact@passdrive.com</p>
+            </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Mobile Hero Section -->
+    <div class="block md:hidden bg-[url(/assets/images/bannermobile1.png)] bg-cover bg-center bg-no-repeat items-center justify-center text-center">
         <div class="px-[20px] pt-[150px]">
             <h1 class="text-white text-[32px] font-lato">
                 Get on the road with <span class="font-bold">safety</span> and <span class="font-bold">confidence</span>.
@@ -72,7 +96,7 @@
             </button>
         </div> 
     </div>
-    <div class="text-center py-[40px]">
+    <div class="block md:hidden text-center py-[40px]">
         <h1 class="text-dark-blue font-bold font-lato text-[24px] mx-[50px]">Making your driving goals a reality.</h1>
         <div class="mt-[20px]">
             <div class="flex flw-row justify-center">
@@ -89,8 +113,10 @@
             </div>
         </div>
     </div>
+
+    <!-- Desktop Hero Section -->
     
-    <footer class="bg-dark-blue py-[25px] px-[30px] text-center">
+    <footer class="block md:hidden bg-dark-blue py-[25px] px-[30px] text-center">
         <p class="text-white text-[16px] font-lato">2025 Pass & Drive | All rights reserved | Websites & Marketing by Handler</p>
     </footer>
 </body>

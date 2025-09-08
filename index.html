@@ -55,6 +55,7 @@
         
     </header>
 
+    <!-- Desktop header -->
     <header class="hidden md:block bg-dark-blue px-6 sm:px-12 xl:px-20 py-4">
         <div class="flex flex-row justify-between items-center">
             <!-- Logo + Menu -->
@@ -63,7 +64,7 @@
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex space-x-4 lg:space-x-8 items-end">
-                <a href="#" class="font-lato font-semibold text-white text-sm lg:text-base hover:text-blue-600">HOME</a>
+                <a href="#" class="font-lato font-semibold text-white text-sm lg:[text-base] hover:text-blue-600">HOME</a>
                 <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">ABOUT US</a>
                 <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">LESSON INFO</a>
                 <a href="#" class="font-lato text-white text-sm lg:text-base hover:text-blue-600">CONTACT</a>
@@ -115,9 +116,33 @@
     </div>
 
     <!-- Desktop Hero Section -->
+     <div class="hidden md:block bg-[url(/assets/images/desktop-banner.png)] bg-cover bg-center bg-no-repeat items-center justify-center text-center md:pt-[250px] lg:pt-[300px]">
+        <h1 class="font-lato md:text-[60px] lg:text-[80px] text-white md:mx-[180px] lg:mx-[340px] leading-none [text-shadow:_2px_2px_6px_rgba(0,0,0,0.8)]">
+            Get on the road with <span class="font-bold">safety</span> and <span class="font-bold">confidence</span>
+        </h1>
+        <button class="bg-darker-blue text-white font-lato text-[24px] rounded-[25px] outline-2 mt-[30px] mb-[200px] shadow-2xl">
+            <p class="font-lato md:text-[20px] lg:text-[24px] text-white mx-[50px] my-[10px]">Book a lesson</p>
+        </button>
+        <div class="bg-[#232936]/40 flex flex-row justify-between md:px-[120px] lg:px-[280px] md:py-[15px] lg:py-[25px]">
+            <div class="flex flex-row text-center items-center">
+                <img src="assets/images/Checkboxes.png">
+                <p class="font-lato text-white md:text-[16px] lg:text-[20px] md:ml-[5px] lg:ml-[15px]">Friendly and Professional</p>
+            </div>
+            <div class="flex flex-row text-center items-center">
+                <img src="assets/images/Checkboxes.png">
+                <p class="font-lato text-white md:text-[16px] lg:text-[20px] md:ml-[5px] lg:ml-[15px]">Nearly two decades of experience</p>
+            </div>
+            <div class="flex flex-row text-center items-center">
+                <img src="assets/images/Checkboxes.png">
+                <p class="font-lato text-white md:text-[16px] lg:text-[20px] md:ml-[5px] lg:ml-[15px]">Over 100 students passed</p>
+            </div>
+        </div>
+     </div>
     
-    <footer class="block md:hidden bg-dark-blue py-[25px] px-[30px] text-center">
-        <p class="text-white text-[16px] font-lato">2025 Pass & Drive | All rights reserved | Websites & Marketing by Handler</p>
+    <footer class=" bg-dark-blue py-[25px] px-[30px] text-center">
+        <p class="text-white md:text-[16px] lg:text-[20px] font-lato tracking-wide">
+            2025 Pass & Drive | All rights reserved | Websites & Marketing by Handler
+        </p>
     </footer>
 </body>
 </html>
